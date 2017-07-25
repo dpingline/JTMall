@@ -15,13 +15,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="JT.common" target="1.5" />
-      <module name="JT.manage" target="1.5" />
-      <module name="JT.manage.controller" target="1.5" />
-      <module name="JT.manage.mapper" target="1.5" />
-      <module name="JT.manage.pojo" target="1.5" />
-      <module name="JT.manage.service" target="1.5" />
-      <module name="JT.parent" target="1.5" />
+      <module name="JT.common" target="1.8" />
+      <module name="JT.manage" target="1.8" />
+      <module name="JT.manage.controller" target="1.8" />
+      <module name="JT.manage.mapper" target="1.8" />
+      <module name="JT.manage.pojo" target="1.8" />
+      <module name="JT.manage.service" target="1.8" />
+      <module name="JT.parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
