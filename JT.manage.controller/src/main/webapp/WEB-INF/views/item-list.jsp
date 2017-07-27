@@ -60,7 +60,7 @@
         			$("#itemeEditForm").form("load",data);
         			
         			// 加载商品描述
-        			$.getJSON('/item/query/item/desc/'+data.id,function(_data){
+        			$.getJSON('/item/desc/'+data.id,function(_data){
         				if(_data.status == 200){
         					//UM.getEditor('itemeEditDescEditor').setContent(_data.data.itemDesc, false);
         					itemEditEditor.html(_data.data.itemDesc);
@@ -118,14 +118,14 @@
         	    if (r){
         	    	var params = {"ids":ids};
                 	$.post("/item/delete",params, function(data){
-            			if(data.status == 200){
-            				$.messager.alert('提示','删除商品成功!',undefined,function(){
-            					$("#itemList").datagrid("reload");
-            				});
-            			}else{
-            				$.messager.alert("提示",data.msg);
-            			}
-            		});
+                        if(data.status == 200){
+                            $.messager.alert('提示','删除商品成功!',undefined,function(){
+                                $("#itemList").datagrid("reload");
+                            });
+                        }else{
+                            $.messager.alert("提示",data.msg);
+                        }
+                    });
         	    }
         	});
         }

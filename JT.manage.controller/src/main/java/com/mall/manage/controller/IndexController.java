@@ -22,4 +22,5 @@ public class IndexController {
     public String toIndex(@PathVariable String index){
         return index;
     }
+
 }

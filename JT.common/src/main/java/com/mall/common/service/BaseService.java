@@ -4,7 +4,11 @@ import java.util.List;
 
 import com.mall.common.mapper.SysMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-
+/**
+ * @Author: Ccaveman
+ * @Description: 将service中公共的的方法提取出来
+ * @Date: Created in 20:52 2017/7/25
+ */
 public abstract class BaseService<T> {
 
     @Autowired
